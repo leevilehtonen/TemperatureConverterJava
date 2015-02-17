@@ -76,7 +76,7 @@ public class TemperatureConverter implements Runnable {
 		container.add(units, mConstraints);
 
 		// Create values column header and adjust constraints
-		JLabel values = new JLabel("Value");
+		JLabel values = new JLabel("Value (xxx.xxx)");
 		mConstraints.gridx = 1;
 		mConstraints.gridy = 0;
 		container.add(values, mConstraints);
@@ -225,6 +225,8 @@ public class TemperatureConverter implements Runnable {
 						// If Kelvin is the input set Kelvin's value to
 						// formula's class variable (Kelvin) and calculate other
 						// values using it
+
+						
 						mTemperatureFormulas.setKelvin(Float
 								.parseFloat(kelvinValue.getText()));
 
